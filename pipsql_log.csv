@@ -1,0 +1,3 @@
+start_time^client^model^dataset^prompt_id^prompt^duration^response
+2024-03-16 18:35:45.612620^gpu_3070^pipSQL^new_zealand^new_zealand#1^How many of the usual residents of New Zealand were born in Germany?^217.443655^SELECT sum(Census_usually_resident_population_count) FROM new_zealand_birthplace_2018_census WHERE Birthplace LIKE '%Germany%'
+2024-03-16 18:39:23.057277^gpu_3070^pipSQL^new_zealand^new_zealand#2^In how many different regions where the usual residents of New Zealand born?^232.000717^SELECT count(DISTINCT Census_usually_resident_population_count) FROM new_zealand_birthplace_2018_census
